@@ -1,11 +1,16 @@
 using namespace std;
-void sendexitcode(std::string pain, int errorline)
+void sendexitcode(std::string error, int errorline)
 {
-    cout << "ERROR at line ";
-    if (pain == "nohello")
+    // THERES NO SWITCH CASE FOR STRINGS THE FUCK
+    cout << "ERROR at line " << errorline << ":\n";
+    if (error == "nohello")
     {
-        cout << "0:\n";
         cout << "senpai didnt say hello to me >:3\n";
+        exit(1);
+    }
+    else if (error == "emptyfile")
+    {
+        cout << "woaaaaah 0_0 the file is soooo smol, still bigger than your pp\n";
         exit(1);
     }
 };
