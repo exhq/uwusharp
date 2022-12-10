@@ -17,6 +17,12 @@ int main(int argc, char **argv)
         whole = ss.str();
     }
     // getting the file completed
+
+    if (whole.length() < 1)
+    {
+        sendexitcode("emptyfile", 0);
+    }
+
     if (whole.rfind("konichiwa >3<", 0) != 0)
     {
         sendexitcode("nohello", 0);
