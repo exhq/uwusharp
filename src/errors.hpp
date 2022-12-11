@@ -1,5 +1,5 @@
 using namespace std;
-void sendexitcode(std::string error, int errorline)
+void sendexitcode(string error, int errorline)
 {
     // THERES NO SWITCH CASE FOR STRINGS THE FUCK
     cout << "ERROR at line " << errorline << ":\n";
